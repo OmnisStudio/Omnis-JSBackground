@@ -1,0 +1,2 @@
+On evClick
+	Do $cinst.$objs.BObj.$backcolor.$assign([iBackColors.[pLineNumber].iBackColor])

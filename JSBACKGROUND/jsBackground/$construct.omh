@@ -1,0 +1,37 @@
+;  Enter your initialization code here
+
+Do iShapes.$define(iShape)
+Do iShapes.$add('kJSBackEllipse')
+Do iShapes.$add('kJSBackRect')
+Do iShapes.$add('kJSBackRoundRect')
+Do iShapes.$add('kJSBackTriangle')
+Do iShapes.$add('kJSBackHorzLine')
+Do iShapes.$add('kJSBackVertLine')
+Do iShapes.$line.$assign(3)
+
+Do iStrokeWidths.$define(iStrokeWidth)
+For lCount from 1 to 5 step 1
+	Do iStrokeWidths.$add(lCount)
+End For
+Do iStrokeWidths.$line.$assign(5)
+
+Do iBackColors.$define(iBackColor)
+Do iBackColors.$add('kBlack')
+Do iBackColors.$add('kBlue')
+Do iBackColors.$add('kGreen')
+Do iBackColors.$add('kRed')
+Do iBackColors.$add('kWhite')
+Do iBackColors.$line.$assign(5)
+
+Do iBorderColors.$define(iBorderColor)
+Do iBorderColors.$merge(iBackColors)
+Do iBorderColors.$line.$assign(1)
+
+Do iBackPatterns.$define(iBackPattern)
+Do iBackPatterns.$add('kPat0')
+Do iBackPatterns.$add('kPat1')
+Do iBackPatterns.$add('kGradientLR')
+Do iBackPatterns.$add('kGradientRL')
+Do iBackPatterns.$add('kGradientTB')
+Do iBackPatterns.$add('kGradientBT')
+Do iBackPatterns.$line.$assign(2)

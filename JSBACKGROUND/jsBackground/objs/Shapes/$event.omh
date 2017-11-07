@@ -1,0 +1,3 @@
+On evClick
+	Calculate iAngle as 0
+	Do $cinst.$objs.BObj.$::shape.$assign([iShapes.[pLineNumber].iShape])

@@ -1,0 +1,2 @@
+On evClick
+	Do $cinst.$objs.BObj.$strokewidth.$assign(iStrokeWidths.[pLineNumber].iStrokeWidth)

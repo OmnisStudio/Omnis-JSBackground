@@ -1,0 +1,11 @@
+On evClick
+	Do $cinst.$objs.BObj.$attr.$assign('attr(scale,.5)')
+	
+	;  Calculate $cinst.$objs.BObj.$animation as 'rotate(360,4000,elastic,rotate_done)'
+	
+	Calculate iAngle as iAngle+360
+	;  If iAnimate
+	Calculate $cinst.$objs.BObj.$animation as con('rotate(',iAngle,',4000,elastic,rotate_done)')
+	;  Else
+	;  Calculate $cinst.$objs.BObj.$animation as con('rotate(',iAngle,',0,elastic,rotate_done)')
+	;  End If
